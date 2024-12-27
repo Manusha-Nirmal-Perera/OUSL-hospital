@@ -26,13 +26,13 @@ public class Appointment implements Comparable<Appointment> {
     }
 
     public void displayAppointmentDetails() {
+        System.out.println("================================");
         System.out.println("Appointment ID: " + appointmentId);
         System.out.println("Patient ID: " + patientId);
         System.out.println("Doctor ID: " + doctorId);
         System.out.println("Appointment Date: " + appointmentDate);
         System.out.println("Emergency: " + (isEmergency ? "Yes" : "No"));
-        System.out.println("Diagnosis: " + diagnosis);
-        System.out.println("Treatment: " + treatment);
+        System.out.println("================================");
     }
 
     public String getAppointmentId() {

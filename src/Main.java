@@ -1,5 +1,6 @@
 import java.util.*;
 
+//TODO: implement the emergancy bookings
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -195,6 +196,8 @@ public class Main {
                     Appointment newAppointment = new Appointment(appointmentId, apPatientId, apDoctorId, apDate + " " + chosenSlot, false);
                     appointments.add(newAppointment);
                     System.out.println("Appointment booked successfully!");
+                    newAppointment.displayAppointmentDetails();
+
                     break;
 
                 case 6: // Add medical history
